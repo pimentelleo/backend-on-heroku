@@ -1,4 +1,4 @@
-const port = 3000;
+const port = 80;
 const express = require('express');
 const app = express();
 
@@ -8,4 +8,4 @@ app.get('/calc', (req, res) => res.send('my name is calculator!'));
 
 app.get('/funcionarios', (req, res) => res.send("HI MY NAME IS FELYPE"));
 
-app.listen(port, () => console.log('Example app listening on port 3000!'));
+app.listen(port, () => console.log('Example app listening on port ${port}!'));
